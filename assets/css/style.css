@@ -148,7 +148,7 @@ button { font: inherit; color: inherit; cursor: pointer; }
 /* ===== Hero ===== */
 .hero {
   min-height: 100svh; position: relative; overflow: hidden;
-  display: grid; grid-template-rows: auto 1fr auto; align-items: center;
+  display: grid; grid-template-rows: 1fr auto; align-items: center;
   padding: calc(var(--nav-h) + 16px) max(16px, calc((100% - 1180px) / 2)) 48px;
 }
 .hero__socials { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px 36px; margin: 0; padding: 0; list-style: none; }
@@ -178,6 +178,9 @@ button { font: inherit; color: inherit; cursor: pointer; }
 /* ===== About ===== */
 .about { display: grid; grid-template-columns: 1fr 1.1fr; gap: clamp(32px, 5vw, 72px); align-items: center; }
 .about__cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
+.about__cv { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+.about__cv .btn { color: var(--muted); border-color: var(--line); }
+.about__cv .btn:hover { color: var(--bg); }
 .about__photo { margin: 0; position: relative; }
 .about__photo img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow); transition: transform 0.5s; }
 .about__photo:hover img { transform: rotate(-1deg) scale(1.01); }
