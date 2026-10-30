@@ -131,7 +131,14 @@ button { font: inherit; color: inherit; cursor: pointer; }
 .nav__links a { display: block; padding: 8px 14px; border-radius: 999px; font-size: 0.9rem; font-weight: 500; text-decoration: none; transition: background 0.2s; }
 .nav__links a:hover { background: var(--accent-soft); }
 .nav__links a.is-active { background: var(--ink); color: var(--bg); }
-.nav__actions { display: flex; gap: 8px; }
+.nav__actions { display: flex; align-items: center; gap: 8px; }
+.lang-switch {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 36px; height: 36px; border-radius: 999px; border: 2px solid var(--ink);
+  font-size: 0.75rem; font-weight: 700; letter-spacing: 0.04em; text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+.lang-switch:hover { background: var(--ink); color: var(--bg); }
 .nav__burger { display: none; }
 
 @media (max-width: 900px) {
